@@ -90,7 +90,7 @@ get_header();
 				?><div class="post-category"><?php _e('Posted in', 'boldr'); ?> <?php the_category(', '); ?></div><?php
 				endif;
 				?><div class="post-content"><?php
-				if ( get_post_format() || post_password_required() || "Full content" == boldr_get_option('blog_index_shows') )
+				if ( get_post_format() || post_password_required() || "content" == get_theme_mod('boldr_blog_index_content') )
 						the_content();
 					else the_excerpt();
 				if (has_tag())

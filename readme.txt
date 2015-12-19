@@ -3,8 +3,8 @@
 Contributors: Iceable
 Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 1.1.47
+Tested up to: 4.2.2
+Stable tag: 1.2
 
 == ABOUT BOLDR LITE ==
 
@@ -54,13 +54,21 @@ Currently available translations (GNU GPLv2 Licensed):
 * Polish (pl_PL) translation: Thanks to nitr0 - dreambyte.pl
 * Italian (it_IT) translation: Thanks to Manuel Valentino - brisma@gmail.com - http://www.brisma.it/
 
-Translating this theme into you own language is quick and easy, you will find a .POT file in the /languages folder to get you started. It contains about 40 strings only.
+Translating this theme into you own language is quick and easy, you will find a .POT file in the /languages folder to get you started. It contains about 80 strings only.
 If you don't have a .po file editor yet, you can download Poedit from http://www.poedit.net/download.php - Poedit is free and available for Windows, Mac OS and Linux.
 
 If you have translated this theme into your own language and are willing to share your translation with the community, please feel free to do so on the forums at http://www.iceablethemes.com
 Your translation files will be added to the next update. Don't forget to leave your name, email address and/or website link so credits can be given to you!
 
 == CHANGELOG ==
+
+= 1.2.0 =
+July 10th, 2015
+* Replaced theme options panel with Customizer implementation
+* Added "title-tag" support
+* Custom Header image: removed recommended height
+* Updated fr_FR translation file
+* Tested with WordPress 4.2.2
 
 = 1.1.47 =
 February 2nd, 2015
