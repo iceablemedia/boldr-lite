@@ -17,21 +17,21 @@
 	endif;
 
 	?><div id="sub-footer"><div class="container"><?php
-		?><div class="sub-footer-left"><?php 
+		?><div class="sub-footer-left"><?php
 
 /* You are free to modify or replace this by anything you like as per the terms of the GPL license */
 
-			printf( __('Copyright &copy; %s %s.', 'boldr'), date('Y'), get_bloginfo('name') );
+			printf( __('Copyright &copy; %s %s.', 'boldr-lite'), date('Y'), get_bloginfo('name') );
 			echo ' ';
-			printf( __('Proudly powered by <a href="%s" title="%s">%s</a>.', 'boldr'),
-				esc_url( __('http://wordpress.org/', 'boldr') ),
-				esc_attr__( 'Semantic Personal Publishing Platform', 'boldr' ),
-				__('WordPress', 'boldr')
+			printf( __('Proudly powered by <a href="%s" title="%s">%s</a>.', 'boldr-lite'),
+				esc_url( __('http://wordpress.org/', 'boldr-lite') ),
+				esc_attr__( 'Semantic Personal Publishing Platform', 'boldr-lite' ),
+				__('WordPress', 'boldr-lite')
 			);
 			echo ' ';
-			printf( __('BoldR design by <a href="%s" title="%s">Iceable Themes</a>.', 'boldr'),
+			printf( __('BoldR design by <a href="%s" title="%s">Iceable Themes</a>.', 'boldr-lite'),
 				esc_url( 'http://www.iceablethemes.com' ),
-				esc_attr( 'Iceablethemes', 'boldr' )
+				esc_attr( 'Iceablethemes', 'boldr-lite' )
 			);
 
 /* Stop editing here */

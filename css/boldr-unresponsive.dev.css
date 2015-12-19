@@ -848,7 +848,7 @@ h1.entry-title {
 	background-color: #25ceff;
 	background-image: url('../img/arrow-right.png');
 	background-position: 100% center;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
     display: block;
     float: left;
     height: 30px;
@@ -956,7 +956,7 @@ h1.entry-title {
 	max-width: 595px;
 }
 
-.single-post .post-contents {	
+.single-post .post-contents {
 	float: none;
 	width: 595px;
 	margin-bottom: 20px;
@@ -1110,7 +1110,7 @@ h1.entry-title {
 	background-color: #25CEFF;
 	background-image: url('../img/arrow-right.png');
 	background-position: 100% center;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
     display: block;
     float:right;
     height: 30px;
@@ -1249,7 +1249,7 @@ h1.entry-title {
 /* #Comment form */
 
 p.form-allowed-tags {
-	display: none; 
+	display: none;
 }
 
 p.comment-form-author,
@@ -1260,7 +1260,7 @@ p.comment-form-url
 }
 
 #respond #commentform label .required {
-	color: red; 
+	color: red;
 }
 
 #cancel-comment-reply-link {
@@ -1690,7 +1690,7 @@ blockquote, blockquote p {
 	font-style: italic;
 }
 
-blockquote {	
+blockquote {
 	margin: 0 40px 20px 40px;
 	padding: 10px 20px;
 	border-left: 3px solid #DDD;
@@ -1747,7 +1747,7 @@ th {
 }
 
 tr {
-	 
+
 }
 
 tr:nth-child(even) {
@@ -2085,4 +2085,22 @@ a img.aligncenter {
 
 .gallery-caption {
 	font-size: 80%;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
 }

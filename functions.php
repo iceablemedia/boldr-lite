@@ -22,7 +22,7 @@ function boldr_setup(){
 	 * Translations can be added to the /languages directory.
 	 * A .pot template file is included to get you started
 	 */
-	load_theme_textdomain('boldr', get_template_directory() . '/languages');
+	load_theme_textdomain('boldr-lite', get_template_directory() . '/languages');
 
 	/* Feed links support */
 	add_theme_support( 'automatic-feed-links' );
@@ -101,10 +101,10 @@ function boldr_add_menu_parent_class( $items ) {
 	}
 	foreach ( $items as $item ) {
 		if ( in_array( $item->ID, $parents ) ) {
-			$item->classes[] = 'menu-parent-item'; 
+			$item->classes[] = 'menu-parent-item';
 		}
 	}
-	return $items;    
+	return $items;
 }
 add_filter( 'wp_nav_menu_objects', 'boldr_add_menu_parent_class' );
 
@@ -113,7 +113,7 @@ add_filter( 'wp_nav_menu_objects', 'boldr_add_menu_parent_class' );
  */
 function boldr_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Default Sidebar', 'boldr' ),
+		'name'          => __( 'Default Sidebar', 'boldr-lite' ),
 		'id'            => 'sidebar',
 		'description'   => '',
 	    'class'         => '',
@@ -123,9 +123,9 @@ function boldr_widgets_init() {
 		'after_title'   => '</h3>',
 		)
 	);
-	
+
 	register_sidebar( array(
-		'name'          => __( 'Footer', 'boldr' ),
+		'name'          => __( 'Footer', 'boldr-lite' ),
 		'id'            => 'footer-sidebar',
 		'description'   => '',
 	    'class'         => '',
@@ -149,7 +149,7 @@ function boldr_styles() {
 	$stylesheet_directory_uri = get_stylesheet_directory_uri(); // Current theme URI
 
 	$responsive_mode = get_theme_mod('boldr_responsive_mode');
-	
+
 	if ($responsive_mode != 'off'):
 		$stylesheet = '/css/boldr.min.css';
 	else:
@@ -163,7 +163,7 @@ function boldr_styles() {
 	if ( @file_exists( $stylesheet_directory . $stylesheet ) )
 		wp_register_style( 'boldr', $stylesheet_directory_uri . $stylesheet );
 	else
-		wp_register_style( 'boldr', $template_directory_uri . $stylesheet );				
+		wp_register_style( 'boldr', $template_directory_uri . $stylesheet );
 
 	// Always enqueue style.css from the current theme
 	wp_register_style( 'boldr-style', $stylesheet_directory_uri . '/style.css');
@@ -221,7 +221,7 @@ add_filter( 'the_category', 'boldr_remove_rel_cat' );
  */
 function boldr_excerpt_more( $more ) {
 	global $post;
-	return '... <div class="read-more"><a href="'. get_permalink( get_the_ID() ) . '">'. __("Read More", 'boldr') .'</a></div>';
+	return '... <div class="read-more"><a href="'. get_permalink( get_the_ID() ) . '">'. __("Read More", 'boldr-lite') .'</a></div>';
 }
 add_filter( 'excerpt_more', 'boldr_excerpt_more' );
 
@@ -249,7 +249,7 @@ function boldr_trim_excerpt($text = '') {
 		if ( ( preg_match('/<!--more(.*?)?-->/', $post->post_content ) || preg_match('/<!--nextpage-->/', $post->post_content ) ) && strpos($text,$excerpt_more) === false ) {
 		 $text .= $excerpt_more;
 		}
-		
+
 	}
 	return apply_filters('boldr_trim_excerpt', $text, $raw_excerpt);
 }
@@ -274,9 +274,9 @@ function boldr_dropdown_nav_menu () {
 		}
 		$menu_list .= '</select>';
    		// $menu_list now ready to output
-   		echo $menu_list;    
+   		echo $menu_list;
 		}
-    } 
+    }
 }
 
 /*
@@ -290,12 +290,12 @@ function boldr_page_has_comments_nav() {
 function boldr_page_has_next_comments_link() {
 	global $wp_query;
 	$max_cpage = $wp_query->max_num_comment_pages;
-	$cpage = get_query_var( 'cpage' );	
+	$cpage = get_query_var( 'cpage' );
 	return ( $max_cpage > $cpage );
 }
 
 function boldr_page_has_previous_comments_link() {
-	$cpage = get_query_var( 'cpage' );	
+	$cpage = get_query_var( 'cpage' );
 	return ($cpage > 1);
 }
 

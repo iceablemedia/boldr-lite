@@ -3,8 +3,8 @@
 Contributors: Iceable
 Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 1.2.1
+Tested up to: 4.3.1
+Stable tag: 1.2.2
 
 == ABOUT BOLDR LITE ==
 
@@ -61,6 +61,13 @@ If you have translated this theme into your own language and are willing to shar
 Your translation files will be added to the next update. Don't forget to leave your name, email address and/or website link so credits can be given to you!
 
 == CHANGELOG ==
+
+= 1.2.2 =
+November 4th, 2015
+* Disabled the "favicon" theme setting for WordPress 4.3+ (no longer useful since WP 4.3+ includes wp_site_icon)
+* Added screen-reader-text CSS support
+* Changed textdomain to theme slug: 'boldr-lite'
+* Tested with WordPress 4.3
 
 = 1.2.1 =
 July 22th, 2015

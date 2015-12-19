@@ -849,7 +849,7 @@ h1.entry-title {
 	background-color: #25ceff;
 	background-image: url('../img/arrow-right.png');
 	background-position: 100% center;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
     display: block;
     float: left;
     height: 30px;
@@ -957,7 +957,7 @@ h1.entry-title {
 	max-width: 595px;
 }
 
-.single-post .post-contents {	
+.single-post .post-contents {
 	float: none;
 	width: 595px;
 	margin-bottom: 20px;
@@ -1111,7 +1111,7 @@ h1.entry-title {
 	background-color: #25CEFF;
 	background-image: url('../img/arrow-right.png');
 	background-position: 100% center;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
     display: block;
     float:right;
     height: 30px;
@@ -1250,7 +1250,7 @@ h1.entry-title {
 /* #Comment form */
 
 p.form-allowed-tags {
-	display: none; 
+	display: none;
 }
 
 p.comment-form-author,
@@ -1261,7 +1261,7 @@ p.comment-form-url
 }
 
 #respond #commentform label .required {
-	color: red; 
+	color: red;
 }
 
 #cancel-comment-reply-link {
@@ -1691,7 +1691,7 @@ blockquote, blockquote p {
 	font-style: italic;
 }
 
-blockquote {	
+blockquote {
 	margin: 0 40px 20px 40px;
 	padding: 10px 20px;
 	border-left: 3px solid #DDD;
@@ -1748,7 +1748,7 @@ th {
 }
 
 tr {
-	 
+
 }
 
 tr:nth-child(even) {
@@ -2088,18 +2088,36 @@ a img.aligncenter {
 	font-size: 80%;
 }
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
 /* 3. @media queries
 ================================================== */
 
 /* #Tablet (Portrait) | Note: Design for a width of 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	
+
 	#page-container {
 		padding: 0 15px 0 0px;
 		margin-left: 15px;
 	}
-	
+
 	#main-wrap {
 		width: 100%;
 		margin: 0;
@@ -2121,11 +2139,11 @@ a img.aligncenter {
 	#page-container { width: 766px; }
 
 	#footer .container > ul > li	{ width: 161px; }
-	
+
 	#page-container.with-sidebar { width: 547px; }
-	
+
 	#sidebar-container { width: 172px; }
-	
+
 	#main-wrap {
 		width: 768px;
 		margin: 20px auto;
@@ -2186,7 +2204,7 @@ a img.aligncenter {
 	#sidebar-container.left {
 		width: 161px;
 		margin-left: 15px!important;
-	}	
+	}
 	#footer .container {
 		width: 768px;
 	}
@@ -2256,7 +2274,7 @@ a img.aligncenter {
 		margin: 20px auto;
 	}
 	#logo {
-		text-align: center 
+		text-align: center
 	}
 	#navbar > .menu-container {
 		width: 300px;
@@ -2340,7 +2358,7 @@ a img.aligncenter {
 	}
 	#calendar_wrap td {
 		padding: 5px 20px;
-	}	
+	}
 	h1.page-title, h1.entry-title {
 		margin: 0 0px 40px 0px;
 		width: 405px;
