@@ -814,6 +814,7 @@ h1.entry-title {
 	float: left;
 	margin-bottom: 20px;
 	margin-right: 20px;
+	max-width: 100%;
 }
 
 h3.entry-title {
