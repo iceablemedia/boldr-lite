@@ -111,10 +111,10 @@
 
 			<div class="page_nav">
 				<?php if ( null != get_next_posts_link() ): ?>
-				<div class="previous"><?php next_posts_link('Previous Posts'); ?></div>
+				<div class="previous"><?php next_posts_link( __('Previous Posts', 'boldr') ); ?></div>
 				<?php endif; ?>
 				<?php if ( null != get_previous_posts_link() ): ?>
-				<div class="next"><?php previous_posts_link('Next Posts'); ?></div>
+				<div class="next"><?php previous_posts_link( __('Next Posts', 'boldr') ); ?></div>
 				<?php endif; ?>
 			</div>
 

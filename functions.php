@@ -309,6 +309,26 @@ function boldr_page_has_previous_comments_link() {
 }
 
 /*
+ * Find whether attachement page needs navigation links (used in single.php)
+ */
+function boldr_adjacent_image_link($prev = true) {
+    global $post;
+    $post = get_post($post);
+    $attachments = array_values(get_children("post_parent=$post->post_parent&post_type=attachment&post_mime_type=image&orderby=\"menu_order ASC, ID ASC\""));
+
+    foreach ( $attachments as $k => $attachment )
+        if ( $attachment->ID == $post->ID )
+            break;
+
+    $k = $prev ? $k - 1 : $k + 1;
+
+    if ( isset($attachments[$k]) )
+        return true;
+	else
+		return false;
+}
+
+/*
  * Framework Elements
  */
 include_once('functions/icefit-options/settings.php'); // Admin Settings Panel

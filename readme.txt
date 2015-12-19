@@ -4,7 +4,7 @@ Contributors: Iceable
 Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 
 == ABOUT BOLDR LITE ==
 
@@ -42,6 +42,11 @@ This theme bundles some third party javascript and jQuery plugins, released unde
 All other files are copyright 2013 Iceable Media.
 
 == CHANGELOG ==
+
+= 1.1.2 =
+June 3rd, 2013
+* Added navigation links on attachment pages
+* All navigation links texts are now translatable
 
 = 1.1.1 =
 May 31th, 2013

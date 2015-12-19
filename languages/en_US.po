@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BoldR Lite 1.1\n"
-"POT-Creation-Date: 2013-05-29 10:53+0100\n"
-"PO-Revision-Date: 2013-05-29 10:54+0100\n"
+"POT-Creation-Date: 2013-06-03 10:54+0100\n"
+"PO-Revision-Date: 2013-06-03 10:54+0100\n"
 "Last-Translator: \n"
 "Language-Team: Iceable Themes <contact@iceablethemes.com>\n"
 "Language: en_US\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "Page Not Found"
 msgstr ""
 
-#: ../404.php:30 ../index.php:107 ../page-full-width.php:55 ../page.php:55
-#: ../single.php:129
+#: ../404.php:30 ../index.php:108 ../page-full-width.php:55 ../page.php:55
+#: ../single.php:147
 msgid "What you are looking for isn't here..."
 msgstr ""
 
@@ -122,12 +122,20 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: ../index.php:89 ../single.php:67
+#: ../index.php:89 ../single.php:68
 msgid "Posted in"
 msgstr ""
 
-#: ../index.php:106 ../page-full-width.php:54 ../page.php:54 ../single.php:128
+#: ../index.php:107 ../page-full-width.php:54 ../page.php:54 ../single.php:146
 msgid "Not Found"
+msgstr ""
+
+#: ../index.php:114
+msgid "Previous Posts"
+msgstr ""
+
+#: ../index.php:117
+msgid "Next Posts"
 msgstr ""
 
 #: ../sidebar.php:16
@@ -142,14 +150,30 @@ msgstr ""
 msgid "Meta"
 msgstr ""
 
-#: ../single.php:72
+#: ../single.php:75
 msgid "Pages:"
 msgstr ""
 
-#: ../single.php:77
+#: ../single.php:80
 msgid "Next page"
 msgstr ""
 
-#: ../single.php:78
+#: ../single.php:81
 msgid "Previous page"
+msgstr ""
+
+#: ../single.php:100
+msgid "Previous Image"
+msgstr ""
+
+#: ../single.php:103
+msgid "Next Image"
+msgstr ""
+
+#: ../single.php:109 ../single.php:132
+msgid "Previous Post"
+msgstr ""
+
+#: ../single.php:112 ../single.php:135
+msgid "Next Post"
 msgstr ""
