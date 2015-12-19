@@ -163,8 +163,11 @@ function boldr_styles() {
 	wp_enqueue_style( 'boldr' );
 	wp_enqueue_style( 'theme-style' );
 	wp_enqueue_style( 'dynamic-styles' );
-	wp_enqueue_style( 'google-webfonts', 'http://fonts.googleapis.com/css?family=Oswald:400italic,700italic,400,700', array(), null );
-	wp_enqueue_style( 'google-webfonts', 'http://fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700', array(), null );
+	
+	// Google Webfonts
+	$protocol = is_ssl() ? 'https' : 'http';
+	wp_enqueue_style( 'Oswald-webfonts', "$protocol://fonts.googleapis.com/css?family=Oswald:400italic,700italic,400,700", array(), null );
+	wp_enqueue_style( 'PTSans-webfonts', "$protocol://fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700", array(), null );
 	
 	//Child theme support
 	wp_register_style( 'style',          get_stylesheet_directory_uri() . '/style.css');
