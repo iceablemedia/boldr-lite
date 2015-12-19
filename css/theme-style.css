@@ -16,6 +16,15 @@
 	padding: 40px 20px;
 }
 
+#logo .site-title {
+	color: #333;
+	font-family: 'Oswald', Helvetica, Arial, Verdana, sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 130%;
+}
+
 #main-wrap {
 	width: 1000px;
 	margin: 40px auto;

@@ -4,7 +4,7 @@ Contributors: Iceable
 Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 
 == ABOUT BOLDR LITE ==
 
@@ -42,6 +42,12 @@ This theme bundles some third party javascript and jQuery plugins, released unde
 All other files are copyright 2013 Iceable Media.
 
 == CHANGELOG ==
+
+= 1.1.3 =
+June 19th, 2013
+* Enhanced child theme support by enqueueing style.css last, with get_stylesheet_directory_uri()
+* Fixed: PT Sans webfont (used for content) were not enqueued
+* Added: Option to use a text-based site title instead of an uploaded logo
 
 = 1.1.2 =
 June 3rd, 2013

@@ -35,7 +35,14 @@ if ($favicon): ?><link rel="shortcut icon" href="<?php echo esc_url($favicon); ?
 			<div class="container">
 				<div id="logo">
 				<a href="<?php echo esc_url( home_url() ); ?>">
-				<img src="<?php echo esc_url( boldr_get_option('logo') ); ?>" alt="<?php bloginfo('name') ?>">
+				
+				<?php $logo_url = boldr_get_option('logo');
+			if ( boldr_get_option('header_title') == 'Display Title' || $logo_url == "" ): ?>
+				<span class="site-title"><?php bloginfo('name') ?></span>
+			<?php else: ?>
+				<img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php bloginfo('name') ?>">
+			<?php endif; ?>
+				
 				</a>
 				</div>
 			</div>
