@@ -476,6 +476,7 @@ h3.entry-title {
 	float: none;
 	margin-right: 0;
 	display: inline-block;
+	max-width: 595px;
 }
 
 .single-post .post-contents {	
