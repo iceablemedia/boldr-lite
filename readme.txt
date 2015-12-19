@@ -3,8 +3,8 @@
 Contributors: Iceable
 Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.5
-Tested up to: 3.5.1
-Stable tag: 1.1.4
+Tested up to: 3.5.2
+Stable tag: 1.1.5
 
 == ABOUT BOLDR LITE ==
 
@@ -43,10 +43,15 @@ All other files are copyright 2013 Iceable Media.
 
 == CHANGELOG ==
 
+= 1.1.5 =
+June 28th, 2013
+* Tested with WordPress 3.5.2
+* Further enhanced child-theme support (Stylesheets in /css folder can override the parent's versions)
+
 = 1.1.4 =
 June 19th, 2013
 * Fixed: PT Sans webfont (used for content) were not enqueued properly
-* Added: Webfonts enqueuing now supports SSL (https)
+* Fixed: Webfonts enqueuing now supports SSL (https)
 
 = 1.1.3 =
 June 19th, 2013

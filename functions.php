@@ -15,7 +15,7 @@
 if ( ! isset( $content_width ) )
 	$content_width = 590;
 
-/* Adjust $content_width it depending on the page being displayed */
+/* Adjust $content_width depending on the page being displayed */
 function boldr_content_width() {
 	global $content_width;
 	if ( is_singular() && !is_page() )
@@ -157,21 +157,36 @@ add_action( 'widgets_init', 'boldr_widgets_init' );
  * Enqueue CSS styles
  */
 function boldr_styles() {
-	wp_register_style( 'boldr',          get_template_directory_uri() . '/css/icefit.css');
-	wp_register_style( 'theme-style',    get_template_directory_uri() . '/css/theme-style.css');
-	wp_register_style( 'dynamic-styles', site_url() . '/index.php?dynamiccss=1');
-	wp_enqueue_style( 'boldr' );
+
+	$template_directory_uri = get_template_directory_uri(); // Parent theme URI
+	$stylesheet_directory = get_stylesheet_directory(); // Current theme directory
+	$stylesheet_directory_uri = get_stylesheet_directory_uri(); // Current theme URI
+
+	/* Child theme support:
+	 * Enqueue child-theme's versions of stylesheets in /css if they exist,
+	 * or the parent theme's version otherwise
+	 */
+	if ( @file_exists( $stylesheet_directory . '/css/icefit.css' ) )
+		wp_register_style( 'icefit', $stylesheet_directory_uri . '/css/icefit.css' );
+	else
+		wp_register_style( 'icefit', $template_directory_uri . '/css/icefit.css' );				
+
+	if ( @file_exists( $stylesheet_directory . '/css/theme-style.css' ) )
+		wp_register_style( 'theme-style', $stylesheet_directory_uri . '/css/theme-style.css' );
+	else
+		wp_register_style( 'theme-style', $template_directory_uri . '/css/theme-style.css' );	
+
+	// Always enqueue style.css from the current theme
+	wp_register_style( 'style', $stylesheet_directory_uri . '/style.css');
+
+	wp_enqueue_style( 'icefit' );
 	wp_enqueue_style( 'theme-style' );
-	wp_enqueue_style( 'dynamic-styles' );
-	
+	wp_enqueue_style( 'style' );
+
 	// Google Webfonts
 	$protocol = is_ssl() ? 'https' : 'http';
 	wp_enqueue_style( 'Oswald-webfonts', "$protocol://fonts.googleapis.com/css?family=Oswald:400italic,700italic,400,700", array(), null );
 	wp_enqueue_style( 'PTSans-webfonts', "$protocol://fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700", array(), null );
-	
-	//Child theme support
-	wp_register_style( 'style',          get_stylesheet_directory_uri() . '/style.css');
-	wp_enqueue_style( 'style' );
 
 }
 add_action('wp_print_styles', 'boldr_styles');
