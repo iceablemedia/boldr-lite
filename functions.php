@@ -225,6 +225,12 @@ function boldr_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'boldr_excerpt_more' );
 
+function boldr_content_more( $more ) {
+	global $post;
+	return '<div class="read-more"><a href="'. get_permalink() . '#more-' . $post->ID . '">'. __("Read More", 'boldr-lite') .'</a></div>';
+}
+add_filter( 'the_content_more_link', 'boldr_content_more' );
+
 /*
  * Rewrite and replace wp_trim_excerpt() so it adds a relevant read more link
  * when the <!--more--> or <!--nextpage--> quicktags are used
