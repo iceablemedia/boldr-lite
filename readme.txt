@@ -3,8 +3,8 @@
 Contributors: Iceable
 Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 3.5
-Tested up to: 4.3.1
-Stable tag: 1.2.3
+Tested up to: 4.4.1
+Stable tag: 1.2.4
 
 == ABOUT BOLDR LITE ==
 
