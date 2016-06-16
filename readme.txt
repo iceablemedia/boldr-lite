@@ -1,7 +1,7 @@
 === BOLDR LITE ===
 
 Contributors: Iceable
-Tags: black, blue, white, light, two-columns, right-sidebar, flexible-width, custom-header, custom-background, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: two-columns, right-sidebar, grid-layout, custom-header, custom-background, custom-menu, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, entertainment, news
 Requires at least: 3.5
 Tested up to: 4.5.2
 Stable tag: 1.2.5
@@ -67,6 +67,7 @@ June 16th, 2016
 * Tested with WordPress 4.5.2
 * Updated external links to wordpress.org and iceablethemes.com to https
 * Removed php closing tags from end of files to prevent potential issues
+* Updated theme tags for WordPress.org
 
 = 1.2.4 =
 January 13th, 2016
