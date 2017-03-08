@@ -224,7 +224,9 @@ add_filter('post_class','boldr_remove_hentry');
  * Remove "rel" tags in category links (HTML5 invalid)
  */
 function boldr_remove_rel_cat( $text ) {
-	$text = str_replace(' rel="category"', "", $text); return $text;
+	$text = str_replace(' rel="category"', "", $text); 
+  $text = str_replace(' rel="category tag"', ' rel="tag"', $text);
+  return $text;
 }
 add_filter( 'the_category', 'boldr_remove_rel_cat' );
 

@@ -19,8 +19,9 @@
 	?><div id="sub-footer"><div class="container"><?php
 		?><div class="sub-footer-left"><?php
 
-/* You are free to modify or replace this by anything you like as per the terms of the GPL license */
+/* You are free to modify or replace this by anything you like as per the terms of the GPL license */ ?>
 
+<?php
 			printf( __('Copyright &copy; %s %s.', 'boldr-lite'), date('Y'), get_bloginfo('name') );
 			echo ' ';
 			printf( __('Proudly powered by <a href="%s" title="%s">%s</a>.', 'boldr-lite'),
@@ -33,8 +34,9 @@
 				esc_url( 'https://www.iceablethemes.com' ),
 				esc_attr( 'Iceablethemes', 'boldr-lite' )
 			);
+?>
 
-/* Stop editing here */
+<?php /* Stop editing here */
 			?></div><?php
 
 		?><div class="sub-footer-right"><?php
