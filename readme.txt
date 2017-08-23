@@ -73,6 +73,7 @@ July 17th, 2017
 * Enhanced: HTML5Shiv is now properly enqueued
 * Enhanced: Using get_the_archive_title() for archive page titles
 * Enhanced: Ordered placeholders for printf() in footer.php
+* Enhanced: Prefixed Google fonts handles
 
 = 1.2.12 =
 June 21th, 2017
