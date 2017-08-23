@@ -62,6 +62,10 @@ Your translation files will be added to the next update. Don't forget to leave y
 
 == CHANGELOG ==
 
+= 1.2.13 =
+July 17th, 2017
+* Added internationalization support to 3-letters months in post dates
+
 = 1.2.12 =
 June 21th, 2017
 * Removed function_exists('wp_site_icon') checks and related functions (deprecated since WP 4.3)
