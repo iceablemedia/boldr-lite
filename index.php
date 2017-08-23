@@ -51,31 +51,35 @@ get_header();
 
 		?><div id="post-<?php the_ID(); ?>" <?php post_class(); ?>><?php
 
-			?><div class="postmetadata"><?php
-				?><span class="meta-date"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php
-					?><span class="month"><?php echo date_i18n( 'M', strtotime( get_the_time('Y-m-d') ) ); ?></span><?php
-					?><span class="day"><?php the_time('d'); ?></span><?php
-					?><span class="year"><?php the_time('Y'); ?></span><?php
+			if ( get_post_type() == 'post' ):
 
-					// Echo published and updated dates for hatom-feed - not to be displayed on front end
-					?><span class="published"><?php the_time(get_option('date_format')); ?></span><?php
-					?><span class="updated"><?php the_modified_date(get_option('date_format')); ?></span><?php
-				?></a></span><?php
+				?><div class="postmetadata"><?php
+					?><span class="meta-date"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php
+						?><span class="month"><?php echo date_i18n( 'M', strtotime( get_the_time('Y-m-d') ) ); ?></span><?php
+						?><span class="day"><?php the_time('d'); ?></span><?php
+						?><span class="year"><?php the_time('Y'); ?></span><?php
 
-				if ( ( comments_open() || get_comments_number()!=0 ) && !post_password_required() ):
-				?><span class="meta-comments"><?php
-					comments_popup_link( __( 'No', 'boldr-lite' ), __( '1', 'boldr-lite' ), __( '%', 'boldr-lite' ), 'comments-count', '' );
-					comments_popup_link( __( 'Comment', 'boldr-lite' ), __( 'Comment', 'boldr-lite' ), __( 'Comments', 'boldr-lite' ), '', __('Comments Off', 'boldr-lite') );
-				?></span><?php
-				endif;
+						// Echo published and updated dates for hatom-feed - not to be displayed on front end
+						?><span class="published"><?php the_time(get_option('date_format')); ?></span><?php
+						?><span class="updated"><?php the_modified_date(get_option('date_format')); ?></span><?php
+					?></a></span><?php
 
-				?><span class="meta-author vcard author"><?php
-					_e('by ', 'boldr-lite');
-					?><span class="fn"><?php the_author(); ?></span><?php
-				?></span><?php
+					if ( ( comments_open() || get_comments_number()!=0 ) && !post_password_required() ):
+					?><span class="meta-comments"><?php
+						comments_popup_link( __( 'No', 'boldr-lite' ), __( '1', 'boldr-lite' ), __( '%', 'boldr-lite' ), 'comments-count', '' );
+						comments_popup_link( __( 'Comment', 'boldr-lite' ), __( 'Comment', 'boldr-lite' ), __( 'Comments', 'boldr-lite' ), '', __('Comments Off', 'boldr-lite') );
+					?></span><?php
+					endif;
 
-				edit_post_link(__('Edit', 'boldr-lite'), '<span class="editlink">', '</span>');
-			?></div><?php
+					?><span class="meta-author vcard author"><?php
+						_e('by ', 'boldr-lite');
+						?><span class="fn"><?php the_author(); ?></span><?php
+					?></span><?php
+
+					edit_post_link(__('Edit', 'boldr-lite'), '<span class="editlink">', '</span>');
+				?></div><?php
+
+			endif;
 
 			?><div class="post-contents"><?php
 				if ( '' != get_the_post_thumbnail() ):	// As recommended from the WP codex, to avoid potential failure of has_post_thumbnail()
