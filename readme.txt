@@ -68,6 +68,7 @@ July 17th, 2017
 * Fixed: Removed metadata for pages in search results
 * Fixed: Prefixed theme constants names
 * Fixed: Removed additional support for child themes for WP<4.7 (was relying on file_exists() which emits a PHP E_WARNING upon failure)
+* Fixed: Singular placeholder in gettext function in comments.php
 * Enhanced: Wrapped pingback url in appropriate conditionals in header.php
 * Enhanced: HTML5Shiv is now properly enqueued
 * Enhanced: Using get_the_archive_title() for archive page titles
