@@ -69,7 +69,8 @@ July 17th, 2017
 * Fixed: Prefixed theme constants names
 * Enhanced: Wrapped pingback url in appropriate conditionals in header.php
 * Enhanced: HTML5Shiv is now properly enqueued
-* Enhanced: Using get_the_archive_title() for archive page titles 
+* Enhanced: Using get_the_archive_title() for archive page titles
+* Enhanced: Ordered placeholders for printf() in footer.php
 
 = 1.2.12 =
 June 21th, 2017
