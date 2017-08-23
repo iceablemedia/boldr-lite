@@ -67,6 +67,7 @@ July 17th, 2017
 * Added internationalization support to 3-letters months in post dates
 * Fixed: Removed metadata for pages in search results
 * Enhanced: Wrapped pingback url in appropriate conditionals in header.php
+* Enhanced: HTML5Shiv is now properly enqueued
 
 = 1.2.12 =
 June 21th, 2017
