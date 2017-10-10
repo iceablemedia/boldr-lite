@@ -1,21 +1,11 @@
 /**
- *
  * BoldR Lite WordPress Theme by Iceable Themes | https://www.iceablethemes.com
- *
  * Copyright 2013-2017 Mathieu Sarrasin - Iceable Media
- *
  * Javascripts
  *
+ * Dependencies:
+ * - Superfish
  */
-
-/* Index
-==================================================
- * 1. BoldR's own scripts + plugins init
- * 2. Superfish
- */
-
-/* 1. BoldR's own scripts + plugins init
-================================================== */
 
 /* --- (document).ready function wrap --- */
 
@@ -42,8 +32,6 @@ jQuery(document).ready(function($){
 
 });
 
-/* 2. Superfish
-================================================== */
 
 /*
  * Superfish v1.4.8 - jQuery menu widget
