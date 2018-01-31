@@ -64,6 +64,9 @@ Source: https://github.com/aFarkas/html5shiv
 
 ## Changelog
 
+### 1.2.16
+January 31th, 2018
+* Merged Google fonts requests into one
 ### 1.2.15
 November 18th, 2017
 * Updated Readme.txt file to the new format for WordPress.org

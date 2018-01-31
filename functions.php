@@ -166,9 +166,8 @@ function boldr_styles() {
 	wp_enqueue_style( 'boldr' );
 	wp_enqueue_style( 'boldr-style' );
 
-	// Google Webfonts
-	wp_enqueue_style( 'boldr-Oswald', '//fonts.googleapis.com/css?family=Oswald:400italic,700italic,400,700&subset=latin,latin-ext', array(), null );
-	wp_enqueue_style( 'boldr-PTSans', '//fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700&subset=latin,latin-ext', array(), null );
+	// Google Webfonts.
+	wp_enqueue_style( 'boldr-webfonts', '//fonts.googleapis.com/css?family=Oswald:400italic,700italic,400,700|PT+Sans:400italic,700italic,400,700&subset=latin,latin-ext', array(), null );
 
 }
 add_action( 'wp_enqueue_scripts', 'boldr_styles' );
