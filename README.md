@@ -51,7 +51,7 @@ BoldR Lite is the lite version of [BoldR Pro](https://www.iceablethemes.com/shop
 ### Translation
 
 Bundled translations (GPL Licensed):
-* French (fr_FR) translation: Copyright 2014-2017, Iceable Themes (https://www.iceablethemes.com)
+* French (fr_FR) translation: Copyright 2013-2018, Iceable Media - Mathieu Sarrasin (https://www.iceablethemes.com)
 * Russian (ru_RU) translation: Copyright Dmitriy Skalubo - http://wordpress.crimea.ua/
 * German (de_DE) translation: Adapted from BoldR Pro translation, Copyright FromBeyond - info@frombeyond.de
 * Spanish (es_ES) translation: Copyright Chema Masip Diaz – http://www.pedaleapormadrid.es/ – chmadi@gmail.com
@@ -69,7 +69,7 @@ Your translation files will be added to the next update. Don't forget to leave y
 
 ## Copyright
 
-BoldR Lite WordPress Theme, Copyright 2013-2017 Iceable Themes (https://www.iceablethemes.com)  
+BoldR Lite WordPress Theme, Copyright 2013-2018 Iceable Media - Mathieu Sarrasin (https://www.iceablethemes.com)  
 BoldR Lite is distributed under the terms of the GNU GPL
 
 BoldR Lite bundles the following third-party resources:
@@ -88,6 +88,8 @@ Source: https://github.com/aFarkas/html5shiv
 ### 1.2.16
 January 31th, 2018
 * Merged Google fonts requests into one
+* Updated copyright
+
 ### 1.2.15
 November 18th, 2017
 * Updated Readme.txt file to the new format for WordPress.org
