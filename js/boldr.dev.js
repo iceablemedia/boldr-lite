@@ -1,6 +1,6 @@
 /**
  * BoldR Lite WordPress Theme by Iceable Themes | https://www.iceablethemes.com
- * Copyright 2013-2020 Iceable Themes - https://www.iceablethemes.com
+ * Copyright 2013-2021 Iceable Themes - https://www.iceablethemes.com
  * Javascripts
  *
  * Dependencies:
