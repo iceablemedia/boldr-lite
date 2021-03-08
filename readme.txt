@@ -2,10 +2,9 @@
 
 **Contributors:** iceable
 **Requires at least:** WordPress 4.7
-**Tested up to:** WordPress 5.1.0
-**Stable tag:** 1.2.18
-**Version:** 1.2.18
-**Tested up to:** 5.5
+**Tested up to:** 5.6.2
+**Stable tag:** 1.2.19
+**Version:** 1.2.19
 **Requires PHP:** 5.6
 **License:** GPLv2 or later
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,16 +54,21 @@ BoldR Lite is distributed under the terms of the GNU GPL
 
 BoldR Lite bundles the following third-party resources:
 
-superfish, Copyright 2013 Joel Birch.
+jQuery Superfish Menu Plugin, Copyright 2018 Joel Birch.
 **License:** MIT and GPL
-Source: http://users.tpg.com.au/j_birch/plugins/superfish/
+Source: https://github.com/joeldbirch/superfish
 
-HTML5 Shiv v3.6, Copyright @afarkas @jdalton @jon_neal @rem
+HTML5 Shiv 3.7.3, Copyright @afarkas @jdalton @jon_neal @rem
 **License:** MIT/GPL2
 Source: https://github.com/aFarkas/html5shiv
 
 
 ## Changelog
+
+### 1.2.19
+March 8th, 2021
+* Updated jQuery Superfish to 1.7.10
+* Updated HTML5 Shiv 3.7.3
 
 ### 1.2.18
 August 29th, 2020
